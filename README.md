@@ -1,16 +1,6 @@
-Kalman Filter
+Kalman Filter and Plot
 =============
-This is a basic Kalman filter implementation in C++ using the
-[Eigen](http://eigen.tuxfamily.org/) library. It implements the algorithm
-directly as found in [An Introduction to the Kalman Filter]
-(http://www.cs.unc.edu/~welch/media/pdf/kalman_intro.pdf).
-
-This filter has been successfully used for the
-[Iron Dome](https://github.com/hmartiro/iron-dome), a robotic system
-which detects and intercepts dynamically thrown projectiles in fractions of a second.
-
-There is a test program that estimates the motion of a projectile based on
-noisy observations. To run it, use CMake:
+this is Kalman Filter algorithm and matplotlib in C++ to visualize result as graph
 
     cd kalman-cpp
     mkdir build
@@ -18,6 +8,9 @@ noisy observations. To run it, use CMake:
     cmake ..
     make
     ./kalman-test
+    
+<result>    
+    ![Screenshot from 2019-11-24 21-46-29](https://user-images.githubusercontent.com/45687080/69494896-31eb2000-0f04-11ea-951e-9304ab4f59ab.png)
 
 Note: You may have to specify the path to your Eigen library in
 `CMakeLists.txt`.
