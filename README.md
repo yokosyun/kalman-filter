@@ -11,6 +11,7 @@ kalman-test.cpp is kind of main.cpp. get the sensor data and call kalmanfilter a
 
 ## Demo
 I will modify the liner plot to remove
+The result doesn't look great, because KF is for liner motion. I will implement EKF and UKF later to compare 
 ![Screenshot from 2019-11-24 21-46-29](https://user-images.githubusercontent.com/45687080/69494896-31eb2000-0f04-11ea-951e-9304ab4f59ab.png)
 
 ## Requirement
@@ -41,4 +42,13 @@ when you cmake .. and you got error. it means cmake find python3. make sure it u
 ```
 undefined reference to `PyString_FromString'
 ```
-
+check libpython2.7.so is finded. if you have python3, you may get libpython2.7.so. then use this one
+target_link_libraries(kalman-test /usr/lib/x86_64-linux-gnu/libpython2.7.so)
+```
+yoko@yoko-VirtualBox:~/Documents/KF/build$ cmake ..
+Eigen3-PATH:/usr/include/eigen3
+Python-PATH:/usr/lib/x86_64-linux-gnu/libpython2.7.so
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yoko/Documents/KF/build
+```
