@@ -10,6 +10,7 @@ matlibplotcpp.h is plot tool
 kalman-test.cpp is kind of main.cpp. get the sensor data and call kalmanfilter and plot
 
 ## Demo
+I will modify the liner plot to remove
 ![Screenshot from 2019-11-24 21-46-29](https://user-images.githubusercontent.com/45687080/69494896-31eb2000-0f04-11ea-951e-9304ab4f59ab.png)
 
 ## Requirement
