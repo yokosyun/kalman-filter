@@ -26,6 +26,7 @@ $apt install install python2.7
 $apt-get install python-matplotlib
 $git clone https://github.com/yokosyun/KF.git
 $cd KF
+$rm -r build
 $mkdir build
 $cd build
 $cmake ..
