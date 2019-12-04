@@ -34,7 +34,7 @@ $./kalman-test
 
 ```
 
-##error
+## error
 when you cmake .. and you got error. it means cmake find python3. make sure it use python2.7
 ```
 undefined reference to `PyString_FromString'
