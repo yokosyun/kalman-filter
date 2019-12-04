@@ -18,12 +18,14 @@ The result doesn't look great, because KF is for liner motion. I will implement 
 c++ 11
 I tried ubuntu16.04(virtual box) or ubuntu18.04
 python2.7(if you have pyhton3, take care not to find python3. there is conflic)
+eigen3
 matliplot
 
 ## Usage
 
 ## Install
 ```
+$apt install libeigen3-dev 
 $apt install install python2.7
 $apt-get install python-matplotlib
 $git clone https://github.com/yokosyun/KF.git
