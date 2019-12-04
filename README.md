@@ -5,7 +5,6 @@ ubuntu16.04(virtual box)
 
 this is Kalman Filter algorithm and matplotlib in C++ to visualize result as graph
 
-    cd kalman-cpp
     mkdir build
     cd build
     cmake ..
